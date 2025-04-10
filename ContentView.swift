@@ -7,8 +7,16 @@ struct ContentView: View {
     var body: some View {
         
         TextField("", value: $number1, formatter: NumberFormatter())
+            .textFieldStyle(RoundedBorderTextFieldStyle())
+            .multilineTextAlignment(.center)
+            .foregroundStyle(.purple)
+            .rotationEffect(Angle(degrees: 65))
         
         TextField("Enter A Number", value: $number2, formatter: NumberFormatter())
+            .textFieldStyle(RoundedBorderTextFieldStyle())
+            .multilineTextAlignment(.center)
+            .foregroundStyle(.purple)
+            .rotationEffect(Angle(degrees: 165))
         
         Button {
             answer = number1 + number2
