@@ -15,6 +15,12 @@ struct ContentView: View {
         } label: {
             Text("Add")
         }
+        
+        Button {
+            answer = number1 - number2
+        } label: {
+            Text("Subtract")
+        }
 
         Text("The answer is \(answer)")
     }
