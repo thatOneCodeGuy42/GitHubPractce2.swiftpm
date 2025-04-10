@@ -10,22 +10,33 @@ struct ContentView: View {
         
         TextField("Enter A Number", value: $number2, formatter: NumberFormatter())
         
-        Button {
-            answer = number1 + number2
-        } label: {
-            Text("Add")
-        }
-        
-        Button {
-            answer = number1 - number2
-        } label: {
-            Text("Subtract")
-        }
-        
-        Button {
-            answer = number1 * number2
-        } label: {
-            Text("Multiply")
+        HStack {
+            Button {
+                answer = number1 + number2
+            } label: {
+                Text("Add")
+                    .frame(width: 100, height: 50)
+                    .foregroundStyle(Color.orange)
+                    .background(Color.black)
+            }
+            
+            Button {
+                answer = number1 - number2
+            } label: {
+                Text("Subtract")
+                    .frame(width: 100, height: 50)
+                    .foregroundStyle(Color.orange)
+                    .background(Color.black)
+            }
+            
+            Button {
+                answer = number1 * number2
+            } label: {
+                Text("Multiply")
+                    .frame(width: 100, height: 50)
+                    .foregroundStyle(Color.orange)
+                    .background(Color.black)
+            }
         }
 
         Text("The answer is \(answer)")
