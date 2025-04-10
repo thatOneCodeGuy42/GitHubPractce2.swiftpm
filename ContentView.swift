@@ -8,5 +8,12 @@ struct ContentView: View {
         TextField("", value: $number1, formatter: NumberFormatter())
         
         TextField("Enter A Number", value: $number2, formatter: NumberFormatter())
+        
+        Button {
+            answer = number1 + number2
+        } label: {
+            Text("Add")
+        }
+
     }
 }
