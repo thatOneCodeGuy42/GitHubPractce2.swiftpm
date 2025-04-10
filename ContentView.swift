@@ -21,6 +21,12 @@ struct ContentView: View {
         } label: {
             Text("Subtract")
         }
+        
+        Button {
+            answer = number1 * number2
+        } label: {
+            Text("Multiply")
+        }
 
         Text("The answer is \(answer)")
     }
